@@ -2,6 +2,26 @@
 
 $cor-cinza:#ececec;
 
+header{
+	.navbar-default{
+		border-radius:0 !important;
+		border:none !important;
+		height: auto !important;
+		.navbar-brand{
+			min-height:auto !important;
+		}
+		.navbar-nav{
+			li{
+				a{
+					font-family: 'Oswald', sans-serif;
+			text-transform: uppercase;
+			color:#333;
+				}
+			}
+		}
+	}
+}
+
 section{
 	padding-top:50px;
 	padding-bottom:50px;

@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600,700|Raleway:300,400,500,600,700i,900");
+header .navbar-default {
+  border-radius: 0 !important;
+  border: none !important;
+  height: auto !important; }
+  header .navbar-default .navbar-brand {
+    min-height: auto !important; }
+  header .navbar-default .navbar-nav li a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #333; }
+
 section {
   padding-top: 50px;
   padding-bottom: 50px; }

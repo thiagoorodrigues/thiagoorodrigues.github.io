@@ -14,6 +14,7 @@
 
     <script src="js/lib/angular.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/controllers/trabalhos.js"></script>
 </head>
 <body>
     <header>
@@ -137,7 +138,7 @@
         </div>
     </section>
 
-    <section id="trabalhos">
+    <section id="trabalhos" ng-controller="TrabalhosController">
         <div class="titulo">
             <div class="container">
                 <h1>Trabalhos Realizados</h1>
@@ -145,29 +146,9 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 trabalho">
-                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="img-responsive" alt="" />
-                    <h2>Nome do Cliente</h2>
-                </div>
-                <div class="col-sm-4 trabalho">
-                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="img-responsive" alt="" />
-                    <h2>Nome do Cliente</h2>
-                </div>
-                <div class="col-sm-4 trabalho">
-                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="img-responsive" alt="" />
-                    <h2>Nome do Cliente</h2>
-                </div>
-                <div class="col-sm-4 trabalho">
-                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="img-responsive" alt="" />
-                    <h2>Nome do Cliente</h2>
-                </div>
-                <div class="col-sm-4 trabalho">
-                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="img-responsive" alt="" />
-                    <h2>Nome do Cliente</h2>
-                </div>
-                <div class="col-sm-4 trabalho">
-                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="img-responsive" alt="" />
-                    <h2>Nome do Cliente</h2>
+                <div class="col-sm-4 trabalho" ng-repeat="projeto in projetos">
+                    <img src="{{projeto.url}}" class="img-responsive" alt="" />
+                    <h2>{{projeto.titulo}}</h2>
                 </div>
             </div>
         </div>

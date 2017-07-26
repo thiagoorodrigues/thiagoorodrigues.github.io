@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600,700|Raleway:300,400,500,600,700i,900");
+section {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  section .titulo h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0 !important;
+    margin-bottom: 20px !important; }
+
+section#servicos {
+  background-color: #ececec; }
+  section#servicos .servico i {
+    font-size: 5vw; }
+  section#servicos .servico h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 0 !important;
+    display: table-cell !important;
+    vertical-align: middle !important; }
+
+section#trabalhos .trabalho img {
+  margin-bottom: 15px; }
+section#trabalhos .trabalho h2 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin: 0 !important;
+  display: table-cell !important;
+  vertical-align: middle !important; }
+
+section#contato {
+  background-color: #ececec; }
+
+footer .copyright {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  footer .copyright p {
+    margin: 0 !important; }
+
+/*# sourceMappingURL=custom.css.map */

@@ -12,6 +12,10 @@ angular.module('thiagorodrigues').controller('TrabalhosController', function($sc
 		{
 			titulo:'Cliente 3',
 			url:'https://getuikit.com/v2/docs/images/placeholder_600x400.svg'
+		},
+		{
+			titulo:'Cliente 4',
+			url:'https://getuikit.com/v2/docs/images/placeholder_600x400.svg'
 		}
 	]
 

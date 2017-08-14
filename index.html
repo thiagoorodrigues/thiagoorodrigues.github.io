@@ -15,6 +15,7 @@
     <script src="js/lib/angular.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/controllers/trabalhos.js"></script>
+    <script src="js/directives/minhas-diretivas.js"></script>
 </head>
 <body>
     <header>
@@ -145,11 +146,20 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 trabalho" ng-repeat="projeto in projetos">
-                    <img src="{{projeto.url}}" class="img-responsive" alt="" />
-                    <h2>{{projeto.titulo}}</h2>
+            <form name="" action="" method="post">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">                            
+                            <input type="text" class="form-control" name="filtrar" id="filtrar" placeholder="Filtro" ng-model="filtro" />
+                        </div>
+                    </div>
                 </div>
+            </form>
+
+            <div class="row">
+                <meu-painel ng-repeat="projeto in projetos | filter: filtro" titulo="{{projeto.titulo}}">
+                    <img src="{{projeto.url}}" class="img-responsive" alt="{{projeto.titulo}}" />
+                </meu-painel>
             </div>
         </div>
     </section>

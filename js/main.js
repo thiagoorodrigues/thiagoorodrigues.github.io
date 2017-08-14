@@ -1,1 +1,1 @@
-angular.module('thiagorodrigues', []);
+angular.module('thiagorodrigues', ['minhasDiretivas']);

@@ -29,14 +29,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        
+                        <img src="imagens/thiago-rodrigues.png" alt="Thiago Rodrigues"/>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class=""><a href="#">Home</a></li>
                         <li class=""><a href="#">Sobre</a></li>
-                        <li class=""><a href="#">Habilidades</a></li>
+                        <li class=""><a href="#">Serviços</a></li>
                         <li class=""><a href="#">Trabalhos Realizados</a></li>
                         <li class=""><a href="#">Entre em Contato</a></li>
                     </ul>
@@ -70,7 +70,7 @@
     <section id="servicos">
         <div class="titulo">
             <div class="container">
-                <h1>Minhas Habilidades</h1>
+                <h1>Serviços</h1>
             </div>
         </div>
         <div class="container">
@@ -146,16 +146,6 @@
             </div>
         </div>
         <div class="container">
-            <form name="" action="" method="post">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-group">                            
-                            <input type="text" class="form-control" name="filtrar" id="filtrar" placeholder="Filtro" ng-model="filtro" />
-                        </div>
-                    </div>
-                </div>
-            </form>
-
             <div class="row">
                 <meu-painel ng-repeat="projeto in projetos | filter: filtro" titulo="{{projeto.titulo}}">
                     <img src="{{projeto.url}}" class="img-responsive" alt="{{projeto.titulo}}" />
@@ -208,7 +198,26 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="col-sm-10">
+                            <strong>Telefone</strong>
+                            <p>(31) 99114 - 7761</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="col-sm-10">
+                            <strong>E-mail</strong>
+                            <p>falecom@thiagodev.com.br</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -221,11 +230,8 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12 text-center">
                         <p>2017 &copy; Todos os Direitos Reservados.</p>
-                    </div>
-                    <div class="col-sm-6">
-
                     </div>
                 </div>
             </div>

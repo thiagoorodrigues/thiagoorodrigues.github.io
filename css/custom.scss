@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700|Raleway:300,400,500,600,700i,900');
 
 $cor-cinza:#ececec;
+$cor-laranja:#ef4722;
+$cor-azul:#32373f;
+$cor-branco:#fff;
 
 header{
 	.navbar-default{
 		border-radius:0 !important;
 		border:none !important;
 		height: auto !important;
+		min-height:auto !important;
 		.navbar-brand{
 			min-height:auto !important;
+			height: auto !important;
 		}
 		.navbar-nav{
+			margin-top: 10px !important;
 			li{
 				a{
 					font-family: 'Oswald', sans-serif;
-			text-transform: uppercase;
-			color:#333;
+					text-transform: uppercase;
+					color:#333;
+				}
+				a:hover{
+					background-color:$cor-azul;
+					color:$cor-branco;
 				}
 			}
 		}
@@ -38,6 +48,7 @@ section{
 section#servicos{
 	background-color:$cor-cinza;
 	.servico{
+		margin-top: 40px !important;
 		i{
 			font-size: 5vw;
 		}
@@ -55,8 +66,9 @@ section#servicos{
 
 section#trabalhos{
 	.trabalho{
-		img{
-			margin-bottom: 15px;
+		margin-bottom: 20px !important;
+		.img-thumbnail{
+			margin-bottom:10px !important;
 		}
 		h2{
 			text-transform: uppercase;

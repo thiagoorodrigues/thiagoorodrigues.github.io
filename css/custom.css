@@ -2,13 +2,20 @@
 header .navbar-default {
   border-radius: 0 !important;
   border: none !important;
-  height: auto !important; }
+  height: auto !important;
+  min-height: auto !important; }
   header .navbar-default .navbar-brand {
-    min-height: auto !important; }
-  header .navbar-default .navbar-nav li a {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: #333; }
+    min-height: auto !important;
+    height: auto !important; }
+  header .navbar-default .navbar-nav {
+    margin-top: 10px !important; }
+    header .navbar-default .navbar-nav li a {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      color: #333; }
+    header .navbar-default .navbar-nav li a:hover {
+      background-color: #32373f;
+      color: #fff; }
 
 section {
   padding-top: 50px;
@@ -21,25 +28,29 @@ section {
 
 section#servicos {
   background-color: #ececec; }
-  section#servicos .servico i {
-    font-size: 5vw; }
-  section#servicos .servico h2 {
+  section#servicos .servico {
+    margin-top: 40px !important; }
+    section#servicos .servico i {
+      font-size: 5vw; }
+    section#servicos .servico h2 {
+      text-transform: uppercase;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      margin: 0 !important;
+      display: table-cell !important;
+      vertical-align: middle !important; }
+
+section#trabalhos .trabalho {
+  margin-bottom: 20px !important; }
+  section#trabalhos .trabalho .img-thumbnail {
+    margin-bottom: 10px !important; }
+  section#trabalhos .trabalho h2 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     margin: 0 !important;
     display: table-cell !important;
     vertical-align: middle !important; }
-
-section#trabalhos .trabalho img {
-  margin-bottom: 15px; }
-section#trabalhos .trabalho h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  margin: 0 !important;
-  display: table-cell !important;
-  vertical-align: middle !important; }
 
 section#contato {
   background-color: #ececec; }
